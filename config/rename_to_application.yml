@@ -1,0 +1,18 @@
+# IMPORTANT: Rename this file to `application.yml` before pasting in sensitive information
+# like OAuth keys, as that filename is excluded via `.gitignore`
+
+development:
+  SECRET_KEY_BASE: #generate with rake secret and paste
+
+test:
+  SECRET_KEY_BASE: #generate with rake secret and paste
+
+production:
+  SECRET_KEY_BASE: #generate with rake secret and paste
+
+TWITTER_OAUTH_KEY: #copy from https://apps.twitter.com
+TWITTER_OAUTH_SECRET: #copy from https://apps.twitter.com
+GITHUB_OAUTH_KEY: #copy from https://github.com/settings/developers
+GITHUB_OAUTH_SECRET: #copy from https://github.com/settings/developers
+FACEBOOK_OAUTH_KEY: #copy App ID from https://developers.facebook.com/apps and insert with '' => '12345'
+FACEBOOK_OAUTH_SECRET: #copy App Secret from https://developers.facebook.com/apps
