@@ -11,13 +11,13 @@ View on Heroku: https://omniauthy-demo.herokuapp.com
 
 ## MANUAL
 * run `bundle install` to install gems
+* rename `rename_to_application.yml` to `application.yml` for Figaro support
 * generate application secrets with `rake secret` and copy to
-  `rename_to_application.yml`
+  `application.yml`
 * set callback URLs for registered application on GitHub, Twitter to correct
   URL. When running locally, you can use `http://lvh.me` as callback URL in case
   `http://localhost` is not allowed by the provider.
 * copy/paste OAuth keys from GitHub, Twitter, Facebook
-* rename file to `application.yml` for Figaro support
 * start local Rails server with `rails s` and navigate to
   `http://localhost:3000` in browser or `http://lvh.me:3000` when using
   `lvh.me` as callback.
@@ -29,7 +29,7 @@ View on Heroku: https://omniauthy-demo.herokuapp.com
 * `git push heroku master`
 * set Heroku environment variables via Figaro: `figaro heroku:set -e
   production`
-* update OAuth callback URLs on GitHub, Twitter to
+* update OAuth callback URLs on GitHub, Facebook, Twitter to
   `app-name.herokuapp.com`
 * `heroku restart` on command line
 
@@ -38,4 +38,5 @@ View on Heroku: https://omniauthy-demo.herokuapp.com
   * make sure your "allowed URLs" include
     `http://app-name.herokuapp.com` and `https://...`
 * To check the Heroku environment variables, log into your Heroku
-  account, navigate to app and select "Reveal config vars" in Settings.
+  account, navigate to app and select "Reveal config vars" in Settings
+  or execute `heroku config` on the command line in your app folder.
