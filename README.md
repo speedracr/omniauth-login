@@ -2,6 +2,8 @@
 This is an OAuth 2.0 demo app, based on the Stuk.io Codecast at
 https://www.youtube.com/watch?v=11BInedaQSo
 
+View on Heroku: https://omniauthy-demo.herokuapp.com
+
 ## MODIFICATIONS
 * added Heroku support (see Gemfile)
 * added [Figaro gem](https://github.com/laserlemon/figaro) to administrate
